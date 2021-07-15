@@ -1,0 +1,85 @@
+#!/usr/bin/seshat -f
+{
+	version: "0.1.0",
+	image: {
+		name: "markers",
+		width: 256,
+		height: 256,
+		status: 0,
+		pixbuf: "TFpXAOkFAACWAgAAAABwSJECIAB9AwsCQAjQ3kIABBzKc4jAoTuHDFCgKKhOhYqCEDIWNNexIIWQAMWRBIjhJABvKgO21LZiRUEQLa3RLEiipTSdADNqBOjsJwAWDpWxYFEQhkNjSgvScCgMKkAcDoFVBXCVIECqSwFK7QrA2IsXTJGaLXh0rDO1QB1KewuABExrc0HA1DaXA0xvczHAFDeXAkxzcyEUVTeXQVF3WhEUlaeVQFF7WgEU1ae13COA/TwD4PfnUWgA+0ibXhAgAAeAz/58eUQaYIIAAgRwCDD0yxcAs0MjuC1P3oZ4AnYDYBbb96M3tAEcGB4vnobbyZl98SL7eWjpAuRRt44c4LLY252/AQDdwO14rDeQB7BMuxcA3NVD/547ufn696UXgH6suaZcfQHgJ2Bo8pznBYLpCcAeFFBsAEZ59QmAX4ShGQAFGGBoAAdAyjAXgBf2aUjaJwAV4CGIIs43W28CpLfeH7+tCIABYMABxwblAcfcb3/c+MgnRgIkz2xFpgbAkX/keEAVVWxQBkDMzPZGfqXZiCNAUpZRhgZ1ANRMluot6SUACFQR5phlnjlkkTkiUEYddfwIgDNZApfjPXyqWFsWWWyQxmvAeZajAlmkkYYGeRzapKKMOgopANBwmeMCaeSRR56YJgoQP6Ex0EUXG7QBUDSkdtFGGxr0ARA4rb4aKwDP7KBDDjlsBZACbfTRR57N8LBDDz0AUOwOW90AED09/OADQAPk2iwAz/IQ7bEA7JADDgDds8OyOugAAK8A/ANQuuiq2y67764br7vywjuvvfXiS6++9+6bL7//+htwvwMDTLDABSN8sMIGM5xwwws7HDHEEz9cscQWU3yxxhlzjDHGzQI="
+	},
+	palette: {
+		fg: 112,
+		bg: 141,
+		slot: 3,
+		slots: [0,1,2,112,4,5,6,7,8,9],
+		colors: [
+			0x00aaaaaa, 0xff000000, 0xffffffff, 0xffffff00, 0xff000000, 0xff000000, 0xff000000, 0xff000000,
+			0xff000000, 0xff000000, 0xff000000, 0xff000000, 0xff000000, 0xff000000, 0xff000000, 0xff000000,
+			0xff000000, 0xff000000, 0xff000000, 0xff000000, 0xff000000, 0xff000000, 0xff000000, 0xff000000,
+			0xff000000, 0xff000000, 0xff000000, 0xff000000, 0xff000000, 0xff000000, 0xff000000, 0xff000000,
+			0xffbf0000, 0xffc41100, 0xffc82200, 0xffcc3300, 0xffd14400, 0xffd55500, 0xffd96600, 0xffdd7700,
+			0xffe28800, 0xffe69900, 0xffeaaa00, 0xffeebb00, 0xfff3cc00, 0xfff7dd00, 0xfffbee00, 0xffffff00,
+			0xffbf0000, 0xffbf0a00, 0xffbf1400, 0xffbf1d00, 0xffbf2700, 0xffbf3000, 0xffbf3a00, 0xffbf4300,
+			0xffbf4d00, 0xffbf5600, 0xffbf6000, 0xffbf6900, 0xffbf7300, 0xffbf7c00, 0xffbf8600, 0xffbf8f00,
+			0xff8a7c53, 0xff857750, 0xff80724d, 0xff7a6c49, 0xff756746, 0xff706242, 0xff6a5c3f, 0xff65573c,
+			0xff605238, 0xff5a4c35, 0xff554731, 0xff50422e, 0xff4a3c2b, 0xff453727, 0xff403224, 0xff3a2c20,
+			0xffff0000, 0xffbf3000, 0xffbf6000, 0xffbf8f00, 0xffbfbf00, 0xff66ff00, 0xff00bf00, 0xff00bf60,
+			0xff00bfbf, 0xff0099ff, 0xff0060bf, 0xff0030bf, 0xff0000bf, 0xffff0066, 0xffbf00bf, 0xffbf0060,
+			0xffcc0000, 0xff9f2800, 0xff9f5000, 0xff9f7800, 0xff9f9f00, 0xff55cc00, 0xff009f00, 0xff009f50,
+			0xff009f9f, 0xff0077cc, 0xff00509f, 0xff00289f, 0xff00009f, 0xffcc0055, 0xff9f009f, 0xff9f0050,
+			0xff990000, 0xff731d00, 0xff733900, 0xff735600, 0xff737300, 0xff449900, 0xff007300, 0xff007339,
+			0xff007373, 0xff005599, 0xff003973, 0xff001d73, 0xff000073, 0xff990044, 0xff730073, 0xff730039,
+			0xff660000, 0xff531500, 0xff532900, 0xff533e00, 0xff535300, 0xff336600, 0xff005300, 0xff005329,
+			0xff005353, 0xff003366, 0xff002953, 0xff001553, 0xff000053, 0xff660033, 0xff530053, 0xff530029,
+			0xff330000, 0xff330d00, 0xff331a00, 0xff332600, 0xff333300, 0xff1a3300, 0xff003300, 0xff00331a,
+			0xff003333, 0xff002633, 0xff001a33, 0xff000d33, 0xff000033, 0xff1a0033, 0xff330033, 0xff33001a,
+			0xff200000, 0xff200800, 0xff201000, 0xff201800, 0xff202000, 0xff102000, 0xff002000, 0xff002010,
+			0xff002020, 0xff001820, 0xff001020, 0xff000820, 0xff000020, 0xff100020, 0xff200020, 0xff200010,
+			0xff401d1d, 0xff40251d, 0xff402e1d, 0xff40371d, 0xff40401d, 0xff2e401d, 0xff1d401d, 0xff1d402e,
+			0xff1d4040, 0xff1d3740, 0xff1d2e40, 0xff1d2540, 0xff1d1d40, 0xff2e1d40, 0xff401d40, 0xff401d2e,
+			0xff602b2b, 0xff60382b, 0xffff0080, 0xff60522b, 0xff60602b, 0xff45602b, 0xff2b602b, 0xff2b6045,
+			0xff2b6060, 0xff2b5260, 0xff2b4560, 0xff2b3860, 0xff2b2b60, 0xff452b60, 0xff602b60, 0xff602b45,
+			0xff9f4848, 0xff9f5e48, 0xff9f7448, 0xffff0000, 0xff9f9f48, 0xff749f48, 0xff489f48, 0xff489f74,
+			0xff489f9f, 0xff48899f, 0xff48749f, 0xff485e9f, 0xff48489f, 0xff74489f, 0xff9f489f, 0xff9f4874,
+			0xffff7373, 0xffff9673, 0xffffb973, 0xffffdc73, 0xffffff73, 0xffb9ff73, 0xff73ff73, 0xff73ffb9,
+			0xff73ffff, 0xff73dcff, 0xff73b9ff, 0xff7396ff, 0xff7373ff, 0xffb973ff, 0xffff73ff, 0xffff73b9,
+			0xff101010, 0xff202020, 0xff303030, 0xff404040, 0xff505050, 0xff606060, 0xff707070, 0xff808080,
+			0xff8f8f8f, 0xff9f9f9f, 0xffafafaf, 0xffbfbfbf, 0xffcfcfcf, 0xffdfdfdf, 0xffefefef, 0xffffffff
+		]
+	},
+	layers: [
+		{
+			name: "Bars",
+			type: "pixbuf",
+			bounds: { x: 0, y: 0, width: 256, height: 256 },
+			alpha: 255,
+			status: 15,
+			pixels: "TFpXAHoDAADnAAAAAAD8Aygw4ECDBRESVHhwYUKGDx1GbDgRIkWE8gIE4ADwWwABAjgEANjNozx5G+IJEAmAW8l48TR4XNlSgLyXMVUCpBkv44acAEh+DMkx40aE36BA2QAGIDgoYMBogNP0adSpAMCBgQNnw8FvVapsKNO0SpkyGuqQNYu2aZk6dboezZJlQ5qmWdKk0ZDnbt69TdPkyROX4LcuXTa0adqlTRsNfRY3fty0TZ8+hCtmlqjZYmfOnzeH9iwa9GjTpVGTVn16dWrWr13Hbj0bNm3ZtXHf1m2bd+7eBxMA"
+		},
+		{
+			name: "Layer",
+			type: "pixbuf",
+			bounds: { x: 0, y: 0, width: 256, height: 256 },
+			alpha: 255,
+			status: 11,
+			pixels: "TFpXABQEAAACAQAAAABwSJECIAB9AwsCQAjQ3kIABBzKc4jAoTuHDFCgKKhOhYqCEDIWNNexIIWQAMWRBIjhJABvKgO21LZiRUEQLa3RLEiipTSdADNqBOjsJwAWDpWxYFEQhkNjSgvScCgMKkAcDoFVBXCVIECqSwFK7QrA2IsXTJGaLXh0rDO1QB1KewuABExrc0HA1DaXA0xvczHAFDeXAkxzcyEUVTeXQVF3WhEUlaeVQFF7WgEU1af1H8DOAD6H9jwaNGnRpVGfVm2aderWq13Hhj37dW3Ztmnf1p2bN27fu3/3Bj5cePHgx4kjN56c+XLnyqE3j/5cenXq16ED"
+		},
+		{
+			name: "Background",
+			type: "pixbuf",
+			bounds: { x: 0, y: 0, width: 256, height: 256 },
+			alpha: 255,
+			status: 11,
+			pixels: "TFpXABQEAADMAAAAAABwGDAAIAB9AwsCQAjQ3kIABBzKc4jAoTuHDByqcwjBoTmHFByKc4jBoTeHAgkC1OYQhENrDkk4lOYQhUNnDlk4VOYQhkNjDmk4FOYQh0NgRIUC9clTJ06bNGXCdMnS4cqUAUuODPmx48aMFytOjOgQ4tWGVxVePXj1H8C2AN7GdTsXLl25dfHe1WuXb96+e/0GBjz4b2HBhgkfVpyYMWLHix83hjxZcuXIlyljtpyZ82bPmkF3Dv1ZdGnSp0ED"
+		},
+		{
+			name: "Layer",
+			type: "pixbuf",
+			bounds: { x: 0, y: 0, width: 256, height: 256 },
+			alpha: 255,
+			status: 11,
+			pixels: "TFpXABMEAAA4AQAAAAD8Aygw4ECDBRESVHhwYUKGDx1GbDgRIkFzjwD2wwiA359HGwHs8whS358vjzwCzPflCwCUG/GZbPnoTUoA9754OVlzoz2TOmm+AWCzXk4vAHYKtUnv59GkAWzOMxrgqU15TakGFWAznlEBSbduhCczgBenWj1+AggPJUsBQYf+cakWQLyXMl3+kfvoE1+A8lDuHQmg7x+681C+Ufox7lyA9BILDewYQL3IeffStZf4Jd17nNMCxPcSI918pAkD1MeY7j7WAPlt1HhQ3w4dOXIAwAHwHo8dPXoA8L1D943HPX74ADjAtnEA9HrwSA4cwI4cu2/uIK5DB4DcEiuGBz+eInnx5dGfV2+effr2693Hhz//fX359unf15+fP37/+/3XH4ADClhgRMYB"
+		}
+	]
+}

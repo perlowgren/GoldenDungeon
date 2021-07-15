@@ -1,0 +1,7 @@
+
+DirectoryIndex index.html index.php
+
+Header add "disablevcache" "true"
+
+RewriteBase /
+

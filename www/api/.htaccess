@@ -1,0 +1,8 @@
+
+DirectoryIndex index.html index.php
+
+Header add "disablevcache" "true"
+
+<FilesMatch "(\.json|\.json\.php)$">
+php_value auto_append_file none
+</FilesMatch>
